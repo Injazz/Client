@@ -58,10 +58,6 @@ At round start, one or more players will be given an antagonistic role at random
 When the crew aren’t turning on each other through sheer paranoia, they will face various dangers depending on the round: Sleeper agents hell bent on sabotage, shape-shifting aliens, RPG toting syndicate operatives and more. 
 Not to mention the occupational hazards of working in space, such as decompression, meteor showers, radiation storms, airlock mishaps, rogue AI and catastrophic engine failure.
 
-### Game Design Document
-
-Someone needs to link the game design document here.
-
 ### Code Maintainers
 
 A set of people are responsible for making sure the runs smoothly and that the contributions made to project are wanted, correct, and functional.
@@ -118,7 +114,7 @@ Use the templates as usual, including the steps that you imagine you would take 
 
 > *Note:* This is only for suggestions. If you have produced actual code or assets, go the [next section](#code-or-asset-contributions)
 
-#### How Do I Submit A (Good) Enhancement Suggestion?
+#### How Do I Submit A (Good) Suggestion?
 
 Enhancement suggestions are tracked as [GitHub issues](https://guides.github.com/features/issues/). If you have an idea for an enhancement, you should provide the following information in the issue:
 
@@ -158,11 +154,13 @@ After forking, you should clone your repository to your local machine. This migh
 
 #### Git Flow
 
-The repository is strucuted based on a subset of [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/), using only using two branches: the *master* branch, and the *develop* branch.
+The repository is strucuted based on a subset of [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/), using only using three branches: the *master* branch, the *develop* branch, and *feature* branches.
 
 The *master* branch always contains the latest released version. No one is allowed to push directly to the *master* branch, not even maintainers. The only exception is if structural changes need to be applied to the repository.
 
 The *develop* branch will contain the latest accepted code. This is the branch that pull requests should merge into. Every once in a while the *develop* branch will be merged into *master*, and a new build will be released with the new changes.
+
+The *feature* branches will contain your unmerged changes. These branches lives on your fork of the repository and will be the source of your pull request. Note that there should ideally only be one feature per branch. Huge merge requests take long to merge, and parts of it might be able to be merged sooner if it is on it's own branch.
 
 ### Pull Requests
 
